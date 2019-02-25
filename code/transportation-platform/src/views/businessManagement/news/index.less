@@ -1,0 +1,36 @@
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 998;
+}
+.viewImg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%;-50%);
+}
+.imgA {
+  cursor: pointer;
+  display: inline-block;
+  color: #2e2c9f;
+  border-bottom: 1px solid #2e2c9f;
+  line-height: 14px;
+  z-index: 999;
+}
+.closeImg {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  background-color: red;
+  z-index: 999;
+  background-image: url('../../../assets/images/close.png');
+  background-size: 100%;
+}

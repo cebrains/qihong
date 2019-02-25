@@ -1,0 +1,395 @@
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+.align-left {
+  text-align: left;
+}
+.common-btn-m {
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #1CB9B5;
+    border: none;
+    padding: 0;
+    float: right;
+    margin-left: 20px;
+    .el-icon-check {
+      display: none;
+    }
+}
+.common-btn-s {
+    background-color: #1CB9B5;
+    border-color: #1CB9B5;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #fff;
+}
+/*带表格的左右整体布局*/
+.el-main.common-main-wrapper {  //整体
+    padding: 40px 0 40px 50px;
+    .el-row.common-main-row {
+        height: 100%;
+        overflow: hidden;
+        .el-col-left {  //左边
+            border-right: 3px solid #ddd;
+            width: 190px;
+            overflow-y: auto;
+        }
+        .el-col-right { //右边
+            position: relative;
+            width: calc(100% - 190px);
+            padding: 0 50px 0 50px;
+            height: 100%;
+            overflow-y: auto;
+            .el-table td, .el-table th {
+                padding: 0 ;
+                height: 42px;
+                line-height: 42px;
+            }
+            .col-right-top {    //右边顶部
+                margin: 0px 0px 40px;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                 .btn-bar {
+                    .table-btn {
+                      width: 70px;
+                      height: 40px;
+                      line-height: 40px;
+                      border-radius: 8px;
+                      color: #fff;
+                      background-color: #1CB9B5;
+                      border: none;
+                      padding: 0;
+                      float: right;
+                      margin-left: 20px;
+                      span {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        margin-left: 0;
+                      }
+                      .el-icon-check {
+                        display: none;
+                      }
+                    }
+                }
+            }
+            .common-height-auto {
+                //height: auto;
+                //max-height: 100%;
+                //overflow-y: auto;
+            }
+            .table-colum-common {
+              width: 100%;
+              //overflow-y: auto;
+              max-height: 580px;
+              border-radius: 8px;
+              border:1px solid #ddd;
+              background-color: #fff;
+              .el-table__body-wrapper {
+                //overflow-y: hidden;
+                .el-table__body {
+                  tbody tr:nth-child(2n+1),tbody tr:first-child{
+                    background-color: #eee;
+                  }
+                }
+              }
+              .el-table{
+                &:before {
+                  height:0px;
+                }
+              }
+              .el-table th, .el-table tr {
+                background-color: transparent;
+              }
+              .el-table tr:hover td{
+                  background-color: rgba(225,225,225,0.3);
+              }
+              .el-table td, .el-table th.is-leaf {
+               border-right: 1px solid rgba(30, 44, 62, 0.1) ;
+                border-bottom: 1px solid rgba(30, 44, 62, 0.1) ;
+                &.el-table_1_column_7 {
+                  border-right: none !important;
+                }
+              }
+              .has-gutter th {
+                color: #1e2c3e;
+                font-weight: bold;
+              }
+
+              .el-table th.is-leaf:last-child {
+                border-right: none !important;
+                display: none;
+              }
+              .el-table td {
+                color: rgba(30,44,62,0.8);
+              }
+              .el-table td:last-child {
+                border-right: none;
+              }
+            }
+        }
+    }
+}
+
+.el-container.detail-win {
+  .el-main {
+    height: 320px;
+  }
+  .align-right {
+    .el-button--primary {
+      float: right;
+    }
+  }
+  .el-row {
+    padding-bottom: 0 !important;
+  }
+  .el-col {
+    height: 45px;
+  }
+
+  .col-label {
+    width: 100px;
+    padding-top: 5px;
+    font-size: 14px;
+    text-align: right;
+    display: inline-block;
+  }
+
+  .col-input {
+    width: 200px;
+  }
+
+  .el-input__inner {
+    padding: 5px;
+    height: 30px;
+    border-radius: 0;
+  }
+
+  .tree-select.tree-select-open>.tree-select-dropdown {
+    max-height: 400px;
+  }
+  .tree-default-small .tree-selected {
+    background: #e1e1e1;
+    border: 0;
+    box-shadow: none;
+  }
+}
+.el-icon-check {
+  display:none;
+}
+.el-icon-close {
+  display:none;
+}
+/*.el-button {
+  background-color: #1CB9B5;
+  border-color: #1CB9B5;
+}
+.el-button:hover {
+  background-color: rgba(28,185,181,0.9);
+  border-color: rgba(28,185,181,0.7);
+}*/
+
+
+//运管
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    font-size:0;
+}
+//搜索框
+.search-bar {
+  float: left;
+  .primary-input {
+    border: 1px solid #8E959E;
+    border-radius: 4px;
+    width: 180px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #626B78;
+    &:focus {
+      border:  1px solid #1CB9B5;
+    }
+  }
+}
+//操作
+.todo-bar {
+  padding: 30px;
+}
+//按钮
+.primary-btn {
+  background: #1CB9B5;
+  border-radius: 4px;
+  width: 68px;
+  height: 34px;
+  color: #fff;
+  margin-left: 8px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+.primary-btn {
+  &.white {
+    border: 1px solid #D2D5D8;
+    background: #fff;
+    color: #626B78;
+  }
+}
+
+.management-common {
+  width: 100%;
+  height: 100%;
+  .table-wrapper {
+    height: calc(100% - 100px);
+    box-shadow: #eee 0px 0px 14px 1px;
+    border-radius: 4px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+   /*分页*/
+  .el-pagination.table-pagination {
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 20px;
+    .el-pager li {
+      &.active {
+        color: #1CB9B5;
+      }
+      &:hover {
+        color: #1CB9B5;
+      }
+
+    }
+    .el-icon {
+      &:hover {
+        color: #1CB9B5;
+      }
+    }
+  }
+  .main-table {
+    box-shadow: #eee 0px 0px 14px 1px;
+    border-radius: 4px;
+    td,th {
+      text-align: center;
+    }
+      .el-table__header-wrapper {
+        thead {
+          th{
+            background: #F8F8F9;
+            border-radius: 4px 4px 0px 0px;
+            font-size: 14px;
+            color: #1E2C3E;
+            height: 48px;
+            font-weight: bold;
+            line-height: 48px;
+            padding: 0;
+          }
+        }
+      }
+      .el-table__body {
+        color: #1e2c3e;
+        font-size: 14px;
+        .cell {
+          height: 100%;
+          line-height: 47px;
+        }
+        .el-table__row {
+          &.current-row {
+            td {
+              background: rgba(28,185,181,0.1);
+               &:first-child {
+                &:before {
+                  content:'';
+                  background: #1CB9B5;
+                  width: 4px;
+                  height: 48px;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                }
+              }
+            }
+          }
+          &:hover {
+            td {
+              background: rgba(28,185,181,0.1);
+              .table-input {
+                .el-input__inner {
+                  border:1px solid #E5E7EA;
+                  &:focus {
+                    border:  1px solid #1CB9B5;
+                  }
+                }
+              }
+            }
+          }
+          td{
+            height: 48px;
+            line-height: 48px;
+            padding: 0;
+          }
+        }
+      }
+}
+}
+.factory-wrappper {
+  padding: 30px;
+  .factory-detail {
+    .factory-name {
+    }
+    .factory-edit {
+      width: 20px;
+      height: 20px;
+      opacity: 0.7;
+      cursor: pointer;
+      vertical-align: top;
+    }
+    .factory-title {
+      margin-right: 10px;
+    }
+    .factory-input {
+      border: 1px solid #8E959E;
+      border-radius: 4px;
+      width: 150px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 15px;
+      font-size: 14px;
+      color: #626B78;
+      margin-left: 10px;
+      &:focus {
+        border:  1px solid #1CB9B5;
+      }
+    }
+  }
+}
+.table-add-picture {
+  .add-btn {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: #8a8a8a;
+    border-radius: 50%;
+    border: 1px solid #D2D5D8;
+    font-weight: bolder;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
