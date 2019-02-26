@@ -1,10 +1,13 @@
 import XLSX from 'xlsx'
-
 export default {
   name: "inputExcel",
   props: {
     type: String,
     default: "选择excel文件"
+  },
+  data() {
+    return {
+    }
   },
   methods: {
     btnClick() {
@@ -17,6 +20,7 @@ export default {
       const that = this;
       // 拿取文件对象
       var f = event.currentTarget.files[0];
+      this.$emit('listName', f)
       // 用FileReader来读取
       var reader = new FileReader();
       // 重写FileReader上的readAsBinaryString方法

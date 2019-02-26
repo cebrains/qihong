@@ -119,7 +119,7 @@ export default {
           });
         }
         return isJPG || isPNG && isLt2M
-      }
+    }
 
   }
 }

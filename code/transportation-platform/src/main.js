@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
-import store from './store'
+//import store from './store'
 import VueResource from 'vue-resource'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/reset.css'
@@ -12,7 +12,10 @@ import './assets/css/common.less'
 import utils from './utils/utils'
 import config from './utils/config'
 import global from './utils/global'
+import Vuex from 'vuex'
+import store from './store/store'
 
+Vue.use(Vuex)
 Vue.use(router);
 Vue.use(ElementUI);
 Vue.use(VueResource);
@@ -22,6 +25,7 @@ Vue.config.productionTip = false
 Vue.prototype.$config = config;
 Vue.prototype.$global = global;
 Vue.prototype.$utils = utils;
+Vue.prototype.$store = store;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

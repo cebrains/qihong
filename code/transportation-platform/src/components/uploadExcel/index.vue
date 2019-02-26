@@ -1,8 +1,8 @@
 <template>
   <span>
-    <input class="input-file" type="file" @change="exportData"  
+    <input style="display: none;" class="input-file" type="file" @change="exportData"  
     accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
-    <div @click="btnClick" class="primary-btn">批量导入</div>
+    <button @click="btnClick" class="primary-btn white" style="float: right;width: 100px">批量上传</button>
   </span>
 </template>
 <script src="./index.js"></script>

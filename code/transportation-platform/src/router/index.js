@@ -18,6 +18,9 @@ import supplierSettlement from '@/views/businessManagement/supplierSettlement/in
 import supplierPrepayment from '@/views/businessManagement/supplierPrepayment/index.vue'
 
 import addNews from '@/views/businessManagement/news/addNews/index.vue'
+import batchImport1 from '@/views/businessManagement/supplierShipment/batchImport1/index.vue'
+import batchImport2 from '@/views/businessManagement/supplierShipment/batchImport2/index.vue'
+import batchImport3 from '@/views/businessManagement/supplierShipment/batchImport3/index.vue'
 
 Vue.use(Router)
 
@@ -90,6 +93,18 @@ export default new Router({
 	      path: '/businessManagement/news/addNews',
 	      name: 'addNews',
 	      component: addNews
+	    },{
+	      path: '/businessManagement/supplierShipment/batchImport1',
+	      name: 'batchImport1',
+	      component: batchImport1
+	    },{
+	      path: '/businessManagement/supplierShipment/batchImport2',
+	      name: 'batchImport2',
+	      component: batchImport2
+	    },{
+	      path: '/businessManagement/supplierShipment/batchImport3',
+	      name: 'batchImport3',
+	      component: batchImport3
 	    }
       ]
     },
